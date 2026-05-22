@@ -7,3 +7,15 @@ def calculate_gym_membership(age: int, membership_type: str, access_day: str, me
         base_rate *= 0.8
         
     return base_rate * membership_duration
+
+def calculate_gym_membership(age: int, membership_type: str, access_day: str, membership_duration: int):
+    if age < 12: 
+        return "Rejected: Age below 12"
+        
+    base_rate = 50.0 
+    if age > 60:
+        base_rate *= 0.7
+    elif membership_type == "Student":
+        base_rate *= 0.8
+        
+    return base_rate * membership_duration
