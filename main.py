@@ -16,4 +16,5 @@ def calculate_gym_membership(age: int, membership_type: str, access_day: str, me
 
     return (base_rate + surcharge) * membership_duration
 
-# simulate merge conflict 2
+
+# simulate merge conflict 1
